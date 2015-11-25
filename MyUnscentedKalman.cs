@@ -1,4 +1,3 @@
-using UnityEngine;
 using System.Collections;
 using System;
 using System.IO;
@@ -157,10 +156,6 @@ namespace AssemblyCSharp
 			sigmaPoints = new Matrix<double>(this.L, 2 * this.L + 1);
 			stateCovariance = new Matrix<double>(L,L);
 			stateCovariance.SetIdentity(new MCvScalar(1.0));
-			
-//			this.alpha = alpha;
-//			this.ki = ki;
-//			this.beta = beta;
 			
 			meansWeights = new Matrix<double>(1,2 * this.L + 1);
 			covarianceWeights = new Matrix<double>(1,2 * this.L + 1);
